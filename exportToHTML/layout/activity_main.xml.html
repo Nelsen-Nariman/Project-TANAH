@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s3">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">tools:context</span><span class="s3">=&quot;.MainActivity&quot;</span>
+    <span class="s1">android:background</span><span class="s3">=&quot;#f4f4f4&quot;</span>&gt;
+
+    &lt;<span class="s4">ImageView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/imageView&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:src</span><span class="s3">=&quot;@drawable/white_rectangle&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s3">=&quot;parent&quot; </span>/&gt;
+
+    &lt;<span class="s4">TextView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/hi_kevin_text&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s3">=&quot;Hi, Kevin&quot;</span>
+        <span class="s1">android:textSize</span><span class="s3">=&quot;24sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s3">=&quot;@+id/imageView&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;@+id/imageView&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;@+id/imageView&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s3">=&quot;@+id/imageView&quot; </span>/&gt;
+
+    &lt;<span class="s4">ImageView</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;38dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;35dp&quot;</span>
+        <span class="s1">android:src</span><span class="s3">=&quot;@drawable/ic_baseline_menu_24&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s3">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;16dp&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s3">=&quot;parent&quot; </span>/&gt;
+
+
+
+    &lt;<span class="s4">TextView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/categories_text&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:fontFamily</span><span class="s3">=&quot;@font/roboto_medium&quot;</span>
+        <span class="s1">android:text</span><span class="s3">=&quot;Categories&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;18dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;8dp&quot;</span>
+        <span class="s1">android:textColor</span><span class="s3">=&quot;#A6A6A6&quot;</span>
+        <span class="s1">android:textSize</span><span class="s3">=&quot;12sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s3">=&quot;@+id/horizontalScrollView&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot; </span>/&gt;
+
+    &lt;<span class="s4">HorizontalScrollView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/horizontalScrollView&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;120dp&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s3">=&quot;parent&quot;</span>&gt;
+
+        &lt;<span class="s4">LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:orientation</span><span class="s3">=&quot;horizontal&quot;</span>&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/img_1&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;18dp&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/categori1&quot; </span>/&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/img_2&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;25dp&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/categori2&quot; </span>/&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/img_3&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;25dp&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/categori3&quot; </span>/&gt;
+
+        &lt;/<span class="s4">LinearLayout</span>&gt;
+    &lt;/<span class="s4">HorizontalScrollView</span>&gt;
+
+    &lt;<span class="s4">ImageView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/rumah_dekat&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;40dp&quot;</span>
+        <span class="s1">android:src</span><span class="s3">=&quot;@drawable/rumah_dekat&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s3">=&quot;@+id/horizontalScrollView&quot; </span>/&gt;
+
+    &lt;<span class="s4">TextView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/cari_rumah_text&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:fontFamily</span><span class="s3">=&quot;@font/roboto_medium&quot;</span>
+        <span class="s1">android:text</span><span class="s3">=&quot;Cari Rumah&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;18dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;15dp&quot;</span>
+        <span class="s1">android:textColor</span><span class="s3">=&quot;#A6A6A6&quot;</span>
+        <span class="s1">android:textSize</span><span class="s3">=&quot;12sp&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s3">=&quot;@+id/horizontalScrollView&quot; </span>/&gt;
+
+    &lt;<span class="s4">ImageView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/semua_rumah&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;24dp&quot;</span>
+        <span class="s1">android:src</span><span class="s3">=&quot;@drawable/semua_rumah&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s3">=&quot;@+id/rumah_dekat&quot; </span>/&gt;
+
+
+    &lt;<span class="s4">com.google.android.material.bottomappbar.BottomAppBar</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/bottomAppBar&quot;</span>
+        <span class="s1">style</span><span class="s3">=&quot;@style/Widget.MaterialComponents.BottomAppBar.Colored&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s3">=&quot;bottom&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s3">=&quot;#76FFA4&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s3">=&quot;BottomAppBar&quot;</span>&gt;
+
+        &lt;<span class="s4">LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:orientation</span><span class="s3">=&quot;horizontal&quot;</span>&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/home_btn_active&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;130px&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/home_btn&quot;</span>/&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/search_btn&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;120px&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/search_btn&quot;</span>/&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/like_btn&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;120px&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/like_btn&quot;</span>/&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/sell_btn&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;120px&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/sell_btn&quot;</span>/&gt;
+
+        &lt;/<span class="s4">LinearLayout</span>&gt;
+    &lt;/<span class="s4">com.google.android.material.bottomappbar.BottomAppBar</span>&gt;
+
+
+
+
+&lt;/<span class="s4">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</pre>
+</body>
+</html>

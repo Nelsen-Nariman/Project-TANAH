@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#F4F4F4">
+
+    <TextView
+        android:id="@+id/judul_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Daftar Akun"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subjudul_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Silahkan isi data diri"
+        android:textColor="#33000000"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_register" />
+
+    <ImageView
+        android:id="@+id/kotak_nama_register"
+        android:layout_width="336dp"
+        android:layout_height="764dp"
+        android:src="@drawable/kotak_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-320dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <EditText
+        android:id="@+id/register_nama"
+        android:layout_width="260dp"
+        android:layout_height="764dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-325dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Nama Lengkap"
+        android:backgroundTint="#00000000"/>
+
+    <ImageView
+        android:id="@+id/icon_nama_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_person_24"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"/>
+
+    <ImageView
+        android:id="@+id/kotak_email_register"
+        android:layout_width="336dp"
+        android:layout_height="764dp"
+        android:src="@drawable/kotak_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjudul_register"
+        android:layout_marginTop="-250dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="260dp"
+        android:layout_height="764dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-255dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Email Kamu"
+        android:backgroundTint="#00000000"/>
+
+    <ImageView
+        android:id="@+id/icon_email_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_email_24"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_nama_register"/>
+
+    <ImageView
+        android:id="@+id/kotak_phone_register"
+        android:layout_width="336dp"
+        android:layout_height="764dp"
+        android:src="@drawable/kotak_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-180dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="260dp"
+        android:layout_height="764dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-185dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Nomor Handphone"
+        android:backgroundTint="#00000000"/>
+
+    <ImageView
+        android:id="@+id/icon_phone_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_phone_24"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_email_register"/>
+
+    <ImageView
+        android:id="@+id/kotak_password_register"
+        android:layout_width="336dp"
+        android:layout_height="764dp"
+        android:src="@drawable/kotak_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-110dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="260dp"
+        android:layout_height="764dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-115dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Password"
+        android:backgroundTint="#00000000"/>
+
+    <ImageView
+        android:id="@+id/icon_password_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_lock_24"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_phone_register"/>
+
+    <ImageView
+        android:id="@+id/kotak_confirmPass_register"
+        android:layout_width="336dp"
+        android:layout_height="764dp"
+        android:src="@drawable/kotak_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-40dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <EditText
+        android:id="@+id/register_confirmPass"
+        android:layout_width="260dp"
+        android:layout_height="764dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="-45dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Konfirmasi Password"
+        android:backgroundTint="#00000000"/>
+
+    <ImageView
+        android:id="@+id/icon_confirmPass_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_lock_24"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_password_register"/>
+
+    <ImageView
+        android:id="@+id/button_buatAkun"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_buatakun_alt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_register"
+        android:layout_marginTop="400dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <TextView
+        android:id="@+id/sudah_punya_akun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Sudah punya akun?"
+        android:textColor="#C4C4C4"
+        android:textSize="10sp"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginTop="485dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_register"/>
+
+    <TextView
+        android:id="@+id/login_akun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Login"
+        android:textColor="#2DD766"
+        android:textSize="10sp"
+        android:layout_marginLeft="-160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sudah_punya_akun"
+        app:layout_constraintTop_toBottomOf="@+id/judul_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
